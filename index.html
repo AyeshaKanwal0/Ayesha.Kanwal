@@ -1,204 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayesha Kanwal | CS Graduate Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            background: #f8f9fa;
-            color: #212529;
-            line-height: 1.6;
-        }
-        header {
-            background: #343a40;
-            color: #fff;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            margin: 0.3rem 0;
-        }
-        nav {
-            background: #495057;
-            text-align: center;
-            padding: 0.5rem 0;
-        }
-        nav a {
-            margin: 0 1rem;
-            color: #fff;
-            font-weight: bold;
-        }
-        section {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        h2 {
-            color: #343a40;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 0.3rem;
-        }
-        ul {
-            list-style: disc;
-            padding-left: 1.5rem;
-        }
-        .project-links a {
-            display: inline-block;
-            margin: 0.3rem 0.5rem 0.3rem 0;
-            background: #007bff;
-            color: #fff;
-            padding: 0.3rem 0.6rem;
-            border-radius: 5px;
-            font-size: 0.9rem;
-        }
-        .project-links a:hover {
-            background: #0056b3;
-        }
-        footer {
-            background: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-        .contact-info a {
-            margin: 0 0.5rem;
-            color: #fff;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayesha Kanwal | Portfolio</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f7fa;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.7rem;
+}
+
+header p {
+    margin: 0.5rem 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.4rem;
+    font-weight: bold;
+}
+
+.resume-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #28a745;
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav {
+    background: #222;
+    padding: 0.8rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    max-width: 950px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 0.3rem;
+}
+
+.card {
+    background: white;
+    padding: 1.2rem;
+    margin: 1rem 0;
+    border-left: 5px solid #007bff;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.buttons a {
+    display: inline-block;
+    margin-top: 0.6rem;
+    margin-right: 0.5rem;
+    padding: 0.45rem 0.8rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.github { background: #24292e; }
+.demo { background: #28a745; }
+.link-btn { background: #007bff; }
+
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+</style>
 </head>
 <body>
 
 <header>
     <h1>Ayesha Kanwal</h1>
     <p>Computer Science Graduate | AI & ML Enthusiast | Software Engineer</p>
+    <p>
+        <a href="mailto:ayesha.kanwalaka@gmail.com">Email</a> |
+        <a href="https://www.linkedin.com/in/ayesha-kanwal-/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/AyeshaKanwal3" target="_blank">GitHub</a>
+    </p>
+    <a href="resume.pdf" class="resume-btn" target="_blank">Download Resume</a>
 </header>
 
 <nav>
     <a href="#education">Education</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
-    <a href="#research">Research</a>
+    <a href="#hackathons">Hackathons</a>
     <a href="#skills">Skills</a>
     <a href="#certifications">Certifications</a>
-    <a href="#honors">Honors</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <section id="education">
     <h2>Education</h2>
-    <p><strong>Bachelor of Science in Computer Science (BSCS)</strong>| Virtual University of Pakistan</p>
-    <p><strong>Core Areas:</strong> Algorithms, Software Engineering, Databases, Computer Networks, Operating Systems, Machine Learning, AI Systems</p>
-    <p><strong>Research Interests:</strong> Software Engineering, Distributed Systems, Databases, Machine Learning, AI Applications, FinTech Systems, Bioinformatics Tools, Data Engineering, Human-Centered Computing, Cognitive Ergonomics</p>
-    <p><strong>Impact:</strong> Final-year research on AI for Social Impact</p>
+    <div class="card">
+        <h3>BS Computer Science</h3>
+        <p>Virtual University of Pakistan</p>
+        <p>Core areas: AI, Machine Learning, Software Engineering, Databases, Networks</p>
+    </div>
 </section>
 
 <section id="experience">
     <h2>Experience</h2>
-    <ul>
-        <li><strong>Applied AI Learner | topmate.io</strong> | Oct 2025 - Present
-            <ul>
-                <li>Conducted live sessions on AI for non-technical fields</li>
-                <li>Designed beginner-friendly AI content with ethics focus</li>
-            </ul>
-        </li>
-        <li><strong>Amal Career Prep Fellowship | Amal Academy</strong> | Aug - Dec 2025
-            <ul>
-                <li>Developed job-readiness, communication, and leadership skills</li>
-            </ul>
-        </li>
-        <li><strong>AI Engineer Apprentice | Maaz Informatics</strong> | Aug - Oct 2024
-            <ul>
-                <li>Built RASA chatbots & integrated Python REST APIs</li>
-            </ul>
-        </li>
-        <li><strong>Software Engineer Fellow | Headstarter AI</strong> | Jul - Aug 2024
-            <ul>
-                <li>Developed backend AI automation modules</li>
-            </ul>
-        </li>
-        <li><strong>AI Front-End Developer | AfterFlea OS</strong> | Sep - Nov 2023
-            <ul>
-                <li>Integrated React UIs with conversational AI engines</li>
-            </ul>
-        </li>
-    </ul>
+
+    <div class="card">
+        <h3>Applied AI Learner | topmate.io</h3>
+        <p>Conducted live AI sessions for non-technical audiences, explaining real-world AI use cases and ethics.</p>
+        <div class="buttons">
+            
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>PSEB Apprenticeship | Maaz Informatics</h3>
+        <p>Worked on chatbot customization using RASA and Python front-end integration.</p>
+    </div>
+
+    <div class="card">
+        <h3>Software Engineer Fellowship | Headstarter AI</h3>
+        <p>Completed software engineering fellowship focused on AI automation and project collaboration.</p>
+    </div>
+
+    <div class="card">
+        <h3>AI Front-End Intern | AfterFlea OS</h3>
+        <p>Developed React front-end components and collaborated on conversational AI systems.</p>
+    </div>
 </section>
 
 <section id="projects">
-    <h2>Projects & GitHub Repos</h2>
-    <ul>
-        <li>Urdu Audio Deepfake Detection (2024) — CNN/Transformer models achieving ~80% accuracy</li>
-        <li>Text Summarization Tool (2023) — BART & T5 transformer-based summarization</li>
-        <li>Public Health Support App (2023) — Open-source MIT-licensed mobile app</li>
-        <li>Udaan Career Guidance Platform (2023) — AI-assisted mentorship initiative</li>
-    </ul>
-   <div class="project-links">
-    <a href="https://github.com/AyeshaKanwal3/Audio-Detection-Model-/tree/main" target="_blank">Audio Deepfake Detection</a> 
-    <a href="https://github.com/AyeshaKanwal3/eco-ai-score" target="_blank">Eco AI Score</a>
-    <a href="https://github.com/AyeshaKanwal3/HR-Management" target="_blank">HR Management</a>
-    <a href="https://github.com/AyeshaKanwal3/Medical-Support" target="_blank">FirstAidNow</a>
-    <a href="https://github.com/AyeshaKanwal3/text-summerization" target="_blank">Text Summarization</a>
-</div>
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Eco AI Score</h3>
+        <p>AI-powered environmental scoring platform.</p>
+        <div class="buttons">
+            <a href="https://github.com/AyeshaKanwal3/eco-ai-score" target="_blank" class="github">GitHub</a>
+            <a href="https://eco-ai-score.vercel.app/" target="_blank" class="demo">Live Demo</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>HR Management System</h3>
+        <p>Employee records and HR workflow management system.</p>
+        <div class="buttons">
+            <a href="https://github.com/AyeshaKanwal3/HR-Management" target="_blank" class="github">GitHub</a>
+            <a href="https://hr-management-eight-wheat.vercel.app/" target="_blank" class="demo">Live Demo</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Text Summarization Tool</h3>
+        <p>NLP-based summarization system using transformer models.</p>
+        <div class="buttons">
+            <a href="https://github.com/AyeshaKanwal3/text-summerization" target="_blank" class="github">GitHub</a>
+        </div>
+    </div>
 </section>
 
-<section id="research">
-    <h2>Research & Publications</h2>
-    <ul>
-        <li>Privacy-Aware Urdu Deepfake Detection using Federated Learning</li>
-        <li>Transformer-Based Academic Text Summarization for Low-Resource Languages</li>
-        <li>Academic Text Summarization Research (Oct 2025–Present)</li>
-    </ul>
+<section id="hackathons">
+    <h2>Hackathons & Fellowships</h2>
+
+    <div class="card">
+        <h3>Amal Career Prep Fellowship</h3>
+        <p>Leadership and career readiness fellowship program.</p>
+    </div>
+
+    <div class="card">
+        <h3>Code Fusion Hackathon 2025</h3>
+        <p>Participated in NLP-focused AI hackathon.</p>
+    </div>
+
+    <div class="card">
+        <h3>AUDIOCRAFT 24-Hours Hackathon</h3>
+        <p>Built AI solutions in a competitive 24-hour hackathon.</p>
+    </div>
 </section>
 
 <section id="skills">
     <h2>Skills</h2>
-    <p><strong>Programming:</strong> Python, JavaScript, HTML, CSS</p>
-    <p><strong>Frameworks & Libraries:</strong> React, Flask, Streamlit, Librosa, scikit-learn, RASA, Django</p>
-    <p><strong>AI/ML:</strong> CNN, RNN, NLP, Transformers (BART, T5), Federated Learning, Speech Processing</p>
-    <p><strong>HCI & Design:</strong> User-Centered Design, Accessibility, Prototyping, Usability Testing</p>
-    <p><strong>Soft Skills:</strong> Leadership, Academic Writing, Collaboration</p>
+    <div class="card">
+        <p>Python, JavaScript, HTML, CSS, Django, Flask, React, NLP, Transformers, RASA, Machine Learning</p>
+    </div>
 </section>
 
 <section id="certifications">
     <h2>Certifications</h2>
-    <ul>
-        <li>Networking Essentials & Cybersecurity — Cisco Networking Academy</li>
-        <li>Freelancing & Business Analytics — DigiSkills Pakistan</li>
-        <li>Generative AI Training — Pak Angels</li>
-        <li>Programming Essentials — ITU-DTC Pakistan</li>
-        <li>Audiocraft Hackathon Recognition — Lablab.ai</li>
-    </ul>
-</section>
 
-<section id="honors">
-    <h2>Fellowships & Honors</h2>
-    <ul>
-        <li>Aspire Leaders Program (Harvard-Affiliated)</li>
-        <li>Amal Career-Prep Fellowship</li>
-        <li>Software Engineer Fellowship | Headstarter AI</li>
-        <li>PSEB Apprenticeship | Maaz Informatics</li>
-    </ul>
+    <div class="card">
+        <h3>McKinsey.org Forward Program</h3>
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/ayesha-kanwal-/details/certifications/" target="_blank" class="link-btn">View Certificate</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Essential Generative AI Training — Pak Angels</h3>
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/ayesha-kanwal-/details/certifications/" target="_blank" class="link-btn">View Certificate</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Networking Essentials — Cisco</h3>
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/ayesha-kanwal-/details/certifications/" target="_blank" class="link-btn">View Certificate</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Introduction to Cybersecurity — Cisco</h3>
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/ayesha-kanwal-/details/certifications/" target="_blank" class="link-btn">View Certificate</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Programming Essentials in C — ITU-DTC</h3>
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/ayesha-kanwal-/details/certifications/" target="_blank" class="link-btn">View Certificate</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>REST APIs with Flask and Python</h3>
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/ayesha-kanwal-/details/certifications/" target="_blank" class="link-btn">View Certificate</a>
+        </div>
+    </div>
 </section>
 
 <section id="contact">
-    <h2>Contact & References</h2>
-    <p>Email: <a href="mailto:ayesha.kanwalaka@gmail.com">Emial</a></p>
-    <a href="https://www.linkedin.com/in/ayesha-kanwal-/" target="_blank">LinkedIn</a>
-    <p>Portfolio: <a href="https://ayeshakanwal.github.io" target="_blank">Github</a></p>
-
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: ayesha.kanwalaka@gmail.com</p>
+        <p><a href="https://github.com/AyeshaKanwal3" target="_blank">GitHub</a></p>
+        <p><a href="https://www.linkedin.com/in/ayesha-kanwal-/" target="_blank">LinkedIn</a></p>
+    </div>
 </section>
 
 <footer>
-    <p>&copy; 2026 Ayesha Kanwal | Academic & Professional Portfolio</p>
+    <p>© 2026 Ayesha Kanwal | Portfolio</p>
 </footer>
 
 </body>
